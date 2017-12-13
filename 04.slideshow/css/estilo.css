@@ -157,6 +157,15 @@ header nav ul li a{
     width: 100%;
 }
 
+#efectoMouse{
+    overflow: hidden;
+}
+
+#efectoMouse figure{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 
 @media(min-width:1200px){
