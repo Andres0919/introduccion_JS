@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 <body>
-    
+    <section id="fotoFondo"></section>
     <div class="content-fluid">
-        <header class="row">
+        <header id="cabezote" class="row">
             <figure id="logotipo" class="col-lg-2 col-md-3 col-ms-3 col-xs-12 ">
                 <img src="imagen/logotipo.png" alt="">
             </figure>
@@ -21,12 +21,12 @@
             </div>
             <nav class="col-lg-6 col-md-7 col-sm-8 col-xs-12">
                 <ul>
-                    <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#">boton 1</a></li>
-                    <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#">boton 2</a></li>
-                    <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#">boton 3</a></li>
-                    <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#">boton 4</a></li>
-                    <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#">boton 5</a></li>
-                    <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#">boton 6</a></li>
+                    <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#cabezote">Inicio</a></li>
+                    <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#inicioGaleria">Galería</a></li>
+                    <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#inicioMouse">Mouse</a></li>
+                    <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#inicioScroll">Scroll</a></li>
+                    <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#">Formulario</a></li>
+                    <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#">Angular</a></li>
                 </ul>
             </nav>
         </header>
@@ -71,6 +71,12 @@
             <div class="flechas" id="retroceder"><span class="fa fa-chevron-left"></span></div class="flechas">
             <div class="flechas" id="avanzar"><span class="fa fa-chevron-right"></span></div>
         </div>
+        
+        <h2 id="inicioGaleria" class="row titulos">
+            <hr>
+                GALERÍA DE IMÁGENES
+            <hr>
+        </h2>
         <div id="galeria" class="row">
             <ul>
                 <li class="col-lg-2 col-md-3 col-sm-4 col-xs-12"><img src="imagen/galeria/galeria01.jpg" alt=""></li>
@@ -87,14 +93,85 @@
                 <li class="col-lg-2 col-md-3 col-sm-4 col-xs-12"><img src="imagen/galeria/galeria06.jpg" alt=""></li>
             </ul>
         </div>
+        <h2 id="inicioMouse" class="row titulos">
+                <hr>
+                    MOVIMIENTO CON EL MOUSE 
+                <hr>
+            </h2>
         <div id="efectoMouse" class="row">
             <figure></figure>
             <figure></figure>
             <figure></figure>
         </div>
+        <h2 id="inicioScroll" class="row titulos">
+                <hr>
+                    EFECTOS CON EL SCROLL
+                <hr>
+            </h2>
+        
+        <div id="scroll">
+            <article class="row">
+                <div class="col-lg-2 col-md-2 col-sm-1 col-xs-0"><br></div>
+                <aside class="col-lg-8 col-md-8 col-sm-10 col-xs-12">
+                    <figure class="col-lg-3 col-md-5 col-sm-6 col-xs-12">
+                        <img src="imagen/slideshow01.jpg">
+                    </figure>         
+                    <div class="col-lg-9 col-md-7 col-sm-6 col-xs-12">
+                        <h1>Lorem IpsumLorem</h1>
+                        <p>Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum</p>
+                        <button>Leer Más..</button>
+                    </div>
+                </aside>
+                <div class="col-lg-2 col-md-2 col-sm-1 col-xs-0"><br></div>
+            </article>
+            <article class="row">
+                <div class="col-lg-2 col-md-2 col-sm-1 col-xs-0"><br></div>
+                <aside class="col-lg-8 col-md-8 col-sm-10 col-xs-12">
+                    <figure class="col-lg-3 col-md-5 col-sm-6 col-xs-12">
+                        <img src="imagen/slideshow02.jpg">
+                    </figure>         
+                    <div class="col-lg-9 col-md-7 col-sm-6 col-xs-12">
+                        <h1>Lorem IpsumLorem</h1>
+                        <p>Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum</p>
+                        <button>Leer Más..</button>
+                    </div>
+                </aside>
+                <div class="col-lg-2 col-md-2 col-sm-1 col-xs-0"><br></div>
+            </article>
+            <article class="row">
+                <div class="col-lg-2 col-md-2 col-sm-1 col-xs-0"><br></div>
+                <aside class="col-lg-8 col-md-8 col-sm-10 col-xs-12">
+                    <figure class="col-lg-3 col-md-5 col-sm-6 col-xs-12">
+                        <img src="imagen/slideshow03.jpg">
+                    </figure>         
+                    <div class="col-lg-9 col-md-7 col-sm-6 col-xs-12">
+                        <h1>Lorem IpsumLorem</h1>
+                        <p>Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum</p>
+                        <button>Leer Más..</button>
+                    </div>
+                </aside>
+                <div class="col-lg-2 col-md-2 col-sm-1 col-xs-0"><br></div>
+            </article>
+            <article class="row">
+                <div class="col-lg-2 col-md-2 col-sm-1 col-xs-0"><br></div>
+                <aside class="col-lg-8 col-md-8 col-sm-10 col-xs-12">
+                    <figure class="col-lg-3 col-md-5 col-sm-6 col-xs-12">
+                        <img src="imagen/slideshow04.jpg">
+                    </figure>         
+                    <div class="col-lg-9 col-md-7 col-sm-6 col-xs-12">
+                        <h1>Lorem IpsumLorem</h1>
+                        <p>Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum</p>
+                        <button>Leer Más..</button>
+                    </div>
+                </aside>
+                <div class="col-lg-2 col-md-2 col-sm-1 col-xs-0"><br></div>
+            </article>
+        </div>
+
     </div>
 <script src="js/slide.js"></script>
 <script src="js/galeria.js"></script>
 <script src="js/mouse.js"></script>
+<script src="js/scroll.js"></script>
 </body>
 </html>
