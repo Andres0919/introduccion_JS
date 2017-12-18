@@ -25,7 +25,7 @@
                     <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#inicioGaleria">Galería</a></li>
                     <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#inicioMouse">Mouse</a></li>
                     <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#inicioScroll">Scroll</a></li>
-                    <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#">Formulario</a></li>
+                    <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#formulario">Formulario</a></li>
                     <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#">Angular</a></li>
                 </ul>
             </nav>
@@ -107,7 +107,7 @@
                 <hr>
                     EFECTOS CON EL SCROLL
                 <hr>
-            </h2>
+        </h2>
         
         <div id="scroll">
             <article class="row">
@@ -168,10 +168,58 @@
             </article>
         </div>
 
+        <h2 id="inicioFormulario" class="row titulos">
+            <hr>
+                VALIDACIÓN FORMULARIO
+            <hr>
+        </h2>
+        <div id="formulario" class="row">
+            <form action="formulario.php" method="post" onsubmit="return mf.validarFormulario()">
+                <h2>Ingrese sus datos</h1>
+                <label for="nombre">Ingrese su nombre: <span class="obligatorio">*Campo Obligatorio</span> </label>
+                <input class="validar" id="nombre" type="text" placeholder="Escriba su usuario con minimo 2, maximo 6 caracteres" required>
+                <label for="password">Ingrese su contraseña: <span class="obligatorio">*Campo Obligatorio</span> </label>
+                <input class="validar" id="password" type="password" maxlength="15" placeholder="Escriba su contraseña con minimo 8 caracteres, y debe incluir letras en mayuscula, en minuscula y numeros" required>
+                <label for="email">Ingrese su correo electronico: <span class="obligatorio">*Campo Obligatorio</span> </label>
+                <input class="validar" id="email" type="email" placeholder="Escriba su correo correctamente" required>
+                <label for="color">Elija un color</label>
+                <select id="color" name="color" id="color">
+                    <option>Seleccione</option>
+                    <option>Amarillo</option>
+                    <option>Rojo</option>
+                    <option>Azul</option>
+                </select>
+                <br>
+                <hr>
+                <p>Seleccione Animal:</p>
+                <input type="checkbox" id="perro">
+                <label class="box" for="perro"><span></span>Perro</label>
+                <input type="checkbox" id="gato">
+                <label class="box" for="gato"><span></span>Gato</label>
+                <input type="checkbox" id="conejo">
+                <label class="box" for="conejo"><span></span>Conejo</label>
+                <hr>
+                <p>Seleccione forma de pago:</p>
+                <input type="radio" name="pago" id="efectivo" checked>
+                <label class="radio" for="efectivo"><span></span>Efectivo</label>
+                <input type="radio" name="pago" id="credito">
+                <label class="radio" for="credito"><span></span>Credito</label>
+                <br>
+                <hr>
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+                <input type="checkbox" name="terminos" id="terminos">
+                <label class="box" for="terminos"><span></span><a href="archivo.pdf" target="_blank">Acepto terminos y condiciones</a></label>
+                <label for="" id="labelEnviar"></label>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+
     </div>
 <script src="js/slide.js"></script>
 <script src="js/galeria.js"></script>
 <script src="js/mouse.js"></script>
 <script src="js/scroll.js"></script>
+<script src="js/formulario.js"></script>
 </body>
 </html>
