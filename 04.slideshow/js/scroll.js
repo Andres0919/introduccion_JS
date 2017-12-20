@@ -27,11 +27,19 @@ var ms = {
         if (ps.posicionScroll > 100) {
             ps.cabezote.style.position = "fixed";
             ps.cabezote.style.zIndex = 10;
-            ps.padding = 120;
+            if (window.matchMedia("(min:width:768px)").matches) {                
+                ps.padding = 120;
+            }else{
+                ps.padding = 180;
+            }
         }else{
             ps.cabezote.style.position = "relative";
             ps.cabezote.style.position = 0;
-            ps.padding = 220;
+            if (window.matchMedia("(min:width:768px)").matches) {                
+                ps.padding = 220;
+            }else{
+                ps.padding = 300;
+            } 
         }
         if (ps.posicionScroll > ps.cajaScroll.offsetTop-200) {
             for (let i = 0; i < ps.articulos.length; i++) {
@@ -40,8 +48,9 @@ var ms = {
             }
         }else{
             for (let i = 0; i < ps.articulos.length; i++) {
-                ps.articulos[i].style.marginLeft = ps.posicionScroll/28 - 100 + "%";
-                
+                if (window.matchMedia("(min:width:768px)").matches) {
+                    ps.articulos[i].style.marginLeft = ps.posicionScroll/28 - 100 + "%";                    
+                }                
             }
         }
     },
